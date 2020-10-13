@@ -60,6 +60,11 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<dependency>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>spring-cloud-starter-azure-spring-cloud-client</artifactId>
+                <version>2.3.0</version>
+        </dependency>
 	</dependencies>
 
 	<dependencyManagement>
@@ -82,16 +87,3 @@
 			</plugin>
 		</plugins>
 	</build>
-    <profiles>
-        <profile>
-            <id>cloud</id>
-            <dependencies>
-                <dependency>
-                    <groupId>com.microsoft.azure</groupId>
-                    <artifactId>spring-cloud-starter-azure-spring-cloud-client</artifactId>
-                    <version>2.3.0</version>
-                </dependency>
-            </dependencies>
-        </profile>
-    </profiles>
-</project>
