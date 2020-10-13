@@ -29,5 +29,5 @@ jobs:
     - name: Deploy gateway to Azure Spring Cloud
       run: |
         az configure --defaults group=kyliedemo
-        az configure --defaults spring-cloud=kylieedemo
+        az configure --defaults spring-cloud=kyliedemo
         az spring-cloud app deploy --name gateway --jar-path gateway/target/demo-0.0.1-SNAPSHOT.jar
