@@ -24,10 +24,10 @@ jobs:
     - name: Deploy event-service to Azure Spring Cloud
       run: | 
         az configure --defaults group=kyliedemo
-        az configure --defaults spring-cloud=superspring
+        az configure --defaults spring-cloud=kyliedemo
         az spring-cloud app deploy --name event-service --jar-path event-service/target/demo-0.0.1-SNAPSHOT.jar
     - name: Deploy gateway to Azure Spring Cloud
       run: |
         az configure --defaults group=kyliedemo
-        az configure --defaults spring-cloud=superspring
+        az configure --defaults spring-cloud=kyliedemo
         az spring-cloud app deploy --name gateway --jar-path gateway/target/demo-0.0.1-SNAPSHOT.jar
