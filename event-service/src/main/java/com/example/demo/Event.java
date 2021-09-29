@@ -1,13 +1,13 @@
 package com.example.demo;
 
-import com.microsoft.azure.spring.data.cosmosdb.core.mapping.Document;
+import com.azure.spring.data.cosmos.core.mapping.Container;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-@Document(collection = "Event")
+@Container(containerName = "Event")
 class Event {
 
-  @JsonIgnore
-  private String id;
+    @JsonIgnore
+    private String id;
 
     private String topic;
 

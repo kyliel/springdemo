@@ -1,0 +1,15 @@
+#azure.cosmos.uri=https://superspringdb.documents.azure.com:443
+#azure.cosmos.key=YE5dawGkc1lkkCZKNVmM4mOfi48qzguVm817TzWBBO8khAsgpFRbphHNPxxLzaAmBTXqFge49izb7VpRljpC2g==
+#azure.cosmos.database=azure-spring-cloud-cosmosdb
+
+azure:
+  cosmos:
+    database: ${azure-cosmosdb-database}
+    key: ${azure-cosmosdb-key}
+    uri: ${azure-cosmosdb-uri}
+  keyvault:
+    client-id: d08c54f4-c7f5-46a1-a4d4-174036c4d072
+    client-key: tXT7Q~Fr5OhRO5jlHxw2mbjt9xijzAXBERz37
+    enabled: true
+    tenant-id: 72f988bf-86f1-41af-91ab-2d7cd011db47
+    uri: https://gzhdemot.vault.azure.net/
