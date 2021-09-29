@@ -8,8 +8,9 @@ azure:
     key: ${azure-cosmosdb-key}
     uri: ${azure-cosmosdb-uri}
   keyvault:
+    enabled: true
+    uri: https://gzhdemot.vault.azure.net/
     client-id: d08c54f4-c7f5-46a1-a4d4-174036c4d072
     client-key: tXT7Q~Fr5OhRO5jlHxw2mbjt9xijzAXBERz37
-    enabled: true
     tenant-id: 72f988bf-86f1-41af-91ab-2d7cd011db47
-    uri: https://gzhdemot.vault.azure.net/
+
